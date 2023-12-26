@@ -1,7 +1,7 @@
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 const Footer = () => {
   return (
-    <footer className="w-full  mx-auto inter-font text-white">
+    <footer className="w-full  mx-auto  text-white">
       <div className="grid grid-cols-1 md:grid-cols-2 ">
         <div className="bg-[#1F2937] px-5 flex md:justify-center items-center py-10 md:py-24 md:text-center">
           <div>
@@ -18,7 +18,7 @@ const Footer = () => {
           <div>
             <h2 className="text-3xl font-medium">Follow US</h2>
             <p className="text-xl font-medium mt-6">Join us on social media</p>
-            <div className="flex md:justify-center gap-8 text-3xl mt-8">
+            <div className=" flex md:justify-center gap-8 text-3xl mt-8">
               <a>
                 <FaFacebook />
               </a>
@@ -33,7 +33,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="bg-[#151515] py-[17px] font-medium inter-font text-center">
-        <p>Copyright © CulinaryCloud. All rights reserved.</p>
+        <p>Copyright © Md.Firoz Hossain. All rights reserved.</p>
       </div>
     </footer>
   );
