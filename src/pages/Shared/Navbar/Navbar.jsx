@@ -1,21 +1,19 @@
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
   const navOptions = (
     <>
-      <li>
-        <a>Item 1</a>
-      </li>
-      <li>
-        <a>Parent</a>
-      </li>
-      <li>
-        <a>Item 3</a>
-      </li>
+      <li><Link to='/'>Home</Link></li>
+      <li><Link to='/'>Our Menu</Link></li>
+      <li><Link to='/'>Order Food</Link></li>
+      <li><Link to='/'>Dashboard</Link></li>
+      <li><Link to='/'>Home</Link></li>
     </>
   );
 
   return (
     <>
-      <div className="navbar bg-opacity-30 max-w-screen-2xl bg-black text-white">
+      <div className="navbar fixed z-10 bg-opacity-30 max-w-screen-xl mx-auto bg-black text-white">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -36,7 +34,7 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-black bg-opacity-30 text-white rounded-box w-52"
             >
               {navOptions}
             </ul>
@@ -44,7 +42,7 @@ const Navbar = () => {
           <a className="btn btn-ghost text-xl">Food House</a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">{navOptions}</ul>
+          <ul className="menu menu-horizontal px-1 ">{navOptions}</ul>
         </div>
         <div className="navbar-end">
           <a className="btn">Button</a>
