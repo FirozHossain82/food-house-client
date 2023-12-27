@@ -4,6 +4,7 @@ import Category from "../Category/Category.jsx";
 import Featured from "../Featured/Featured.jsx";
 import PopularMenu from "../PopularMenu/PopularMenu.jsx";
 import ShadowBanner from "../ShadowBanner/ShadowBanner.jsx";
+import Testimonial from "../Testimonial/Testimonial.jsx";
 
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
             <PopularMenu></PopularMenu>
             <ContactUs></ContactUs>
             <Featured></Featured>
+            <Testimonial></Testimonial>
         </div>
     );
 };
